@@ -1,4 +1,6 @@
 TravelDemo::Application.routes.draw do
+  get "hotels/index"
+
   authenticated :user do
     root :to => 'home#index'
   end
