@@ -1,4 +1,6 @@
 TravelDemo::Application.routes.draw do
+  get "flights/index"
+
   get "hotels/index"
 
   authenticated :user do
