@@ -1,2 +1,406 @@
-<h1>Hotels#index</h1>
-<p>Find me in app/views/hotels/index.html.erb</p>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+			<!--Sidebar content-->
+			<h3>Search Hotel</h3>  
+			<div>
+				<h4> Destination/hotel name: </h4>				
+				<input type="search" value="Madrid">
+				<h4>
+					Distance:
+					<select name="radius">
+						<option value="">select...</option>
+						<option value="2"> 2 km </option>
+						<option value="5"> 5 km </option>
+						<option value="10"> 10 km </option>
+						<option value="15"> 15 km </option>
+						<option value="20"> 20 km </option>
+						<option value="25"> 25 km </option>
+						<option value="30"> 30 km </option>
+						<option value="40"> 40 km </option>
+						<option value="50"> 50 km </option>
+						<option value="100"> 100 km </option>
+				  </select>				
+				</h4>
+				
+				<h4> Check-in date  </h4>
+				
+				<div >				  
+					<select class="span4" name="checkin_monthday">			
+						<option value="1">Thu 1</option>
+						<option value="2">Fri 2</option>
+						<option value="3">Sat 3</option>
+						<option value="4">Sun 4</option>
+						<option value="5">Mon 5</option>
+						<option value="6">Tue 6</option>
+						<option value="7">Wed 7</option>
+						<option value="8">Thu 8</option>
+						<option value="9">Fri 9</option>
+						<option value="10">Sat 10</option>
+						<option value="11">Sun 11</option>
+						<option value="12">Mon 12</option>
+						<option value="13">Tue 13</option>
+						<option value="14">Wed 14</option>
+						<option value="15">Thu 15</option>
+						<option value="16">Fri 16</option>
+						<option value="17">Sat 17</option>
+						<option value="18">Sun 18</option>
+						<option value="19">Mon 19</option>
+						<option value="20">Tue 20</option>
+						<option value="21">Wed 21</option>
+						<option value="22">Thu 22</option>
+						<option value="23">Fri 23</option>
+						<option value="24">Sat 24</option>
+						<option value="25">Sun 25</option>
+						<option value="26">Mon 26</option>
+						<option value="27">Tue 27</option>
+						<option value="28">Wed 28</option>
+						<option selected="selected" value="29">Thu 29</option>
+						<option value="30">Fri 30</option>
+						<option value="31">Sat 31</option>
+			    </select>
+					
+					<select class="span8" name="checkin_year_month">
+						<option selected="selected" value="2013-8"> August 2013 </option>
+						<option value="2013-9"> September 2013 </option>
+						<option value="2013-10"> October 2013 </option>
+						<option value="2013-11"> November 2013 </option>
+						<option value="2013-12"> December 2013 </option>
+						<option value="2014-1"> January 2014 </option>
+						<option value="2014-2"> February 2014 </option>
+						<option value="2014-3"> March 2014 </option>
+						<option value="2014-4"> April 2014 </option>
+						<option value="2014-5"> May 2014 </option>
+						<option value="2014-6"> June 2014 </option>
+						<option value="2014-7"> July 2014 </option>
+			   </select>
+				</div>
+				
+				<div>
+				  <h4> Check-out date  </h4>
+					<select class="span4" name="checkin_monthday">			
+						<option value="1">Thu 1</option>
+						<option value="2">Fri 2</option>
+						<option value="3">Sat 3</option>
+						<option value="4">Sun 4</option>
+						<option value="5">Mon 5</option>
+						<option value="6">Tue 6</option>
+						<option value="7">Wed 7</option>
+						<option value="8">Thu 8</option>
+						<option value="9">Fri 9</option>
+						<option value="10">Sat 10</option>
+						<option value="11">Sun 11</option>
+						<option value="12">Mon 12</option>
+						<option value="13">Tue 13</option>
+						<option value="14">Wed 14</option>
+						<option value="15">Thu 15</option>
+						<option value="16">Fri 16</option>
+						<option value="17">Sat 17</option>
+						<option value="18">Sun 18</option>
+						<option value="19">Mon 19</option>
+						<option value="20">Tue 20</option>
+						<option value="21">Wed 21</option>
+						<option value="22">Thu 22</option>
+						<option value="23">Fri 23</option>
+						<option value="24">Sat 24</option>
+						<option value="25">Sun 25</option>
+						<option value="26">Mon 26</option>
+						<option value="27">Tue 27</option>
+						<option value="28">Wed 28</option>
+						<option selected="selected" value="29">Thu 29</option>
+						<option value="30">Fri 30</option>
+						<option value="31">Sat 31</option>
+			    </select>
+					
+					<select class="span8" name="checkin_year_month">
+						<option selected="selected" value="2013-8"> August 2013 </option>
+						<option value="2013-9"> September 2013 </option>
+						<option value="2013-10"> October 2013 </option>
+						<option value="2013-11"> November 2013 </option>
+						<option value="2013-12"> December 2013 </option>
+						<option value="2014-1"> January 2014 </option>
+						<option value="2014-2"> February 2014 </option>
+						<option value="2014-3"> March 2014 </option>
+						<option value="2014-4"> April 2014 </option>
+						<option value="2014-5"> May 2014 </option>
+						<option value="2014-6"> June 2014 </option>
+						<option value="2014-7"> July 2014 </option>
+			   </select>
+				</div>
+				
+				
+				<div>
+					<h4 class="span4">Adults</h4>
+					<h4 class="span4">Children</h4>
+					<h4 class="span4">Infant</h4>
+				</div>	
+				
+				
+				<div>																
+				
+				<select class="span4" id="adults" >
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						<input id="org_nr_adults" type="hidden" value="2" name="org_nr_adults">
+				
+						
+						<select class="span4">
+							<option selected="selected" value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						<input id="org_nr_children" type="hidden" value="0" name="org_nr_children">
+				
+						
+						<select class="span4" id="infant" >
+						  <option selected="selected" value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						<input id="org_nr_adults" type="hidden" value="0" name="infant">
+				
+						
+			  </div>
+														
+				<div>									
+				    <h4 class="span4"> Rooms<h4>							
+						<select  class="span4" id="nr_rooms">
+							<option selected="selected" value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+						</select>
+						<input id="org_nr_rooms" type="hidden" value="1" name="org_nr_rooms">
+				</div>
+				
+			  <button type="submit" class="btn">Search Hotels</button>
+				
+			</div>
+    </div><!--/span-->
+    
+    <div class="span9 ">    
+     
+     
+     <!--
+      <div id="sort_by">
+				<div id="swap_list_tiles">
+					<a href="#">
+						<span >&nbsp;</span>
+						<span >List</span>
+					</a>
+					<a  href="#">
+						<span >&nbsp;</span>
+						<span >Grid</span>
+					</a>
+				</div>
+				
+				<ul class="bar">
+					<li >
+						<strong>Sort by:</strong>
+					</li>
+					<li >
+						<a>Recommended</a>
+					</li>
+					<li >
+						<a>Stars</a>
+						<ul ">
+							<li><a href="#">stars [5..1]</a></li>
+							<li><a> stars [1..5]</a></li>
+						</ul>
+					</li>
+					<li class="sort_distfrom with_dd">
+						<a class="sort_by_container" href="#">
+							<i class="use_sprites icon_arrow"></i>
+							Location
+						</a>
+						<ul style="display:none; position:absolute">
+							<li style="background-color: #FFEEC0;padding-bottom: 2px;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+							<li style="background-color: #FFEEC0;">
+						</ul>
+					</li>
+					<li class="sort_price with_dd">
+						<a href="#">Price</a>
+						<ul >
+							<li>
+								<a href="#">1 person (including dormitory beds)</a>
+							</li>
+							<li>
+								<a href="#">1 person (single rooms)</a>
+							</li>
+							<li>
+								<a>2 people (double and twin rooms)</a>
+							</li>
+							<li>
+								<a href="">3 people (triple rooms)</a>
+							</li>
+						</ul>
+					</li>
+					<li >
+				</ul>
+				<div>&nbsp;</div>
+			</div>    
+    
+    
+      -->
+      
+			<ul class="unstyled">
+				<% 1.upto(10) do%>
+					<li class="row-fluid" itemscope itemtype="http://schema.org/Product">					 												
+						<% hotel_name = "Hotel #{Faker::Company.name}" %>							
+						<a class="thumbnail span3" title="hotel_name" href="#"> 													  
+							<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+						</a>		
+						<div class="span9">																					
+							<h4 itemprop="name" >
+								<%= hotel_name %> 
+								<% star = 2 + rand(3) %>								
+								<% 1.upto(star) do%> 																						 	
+								 <i	class="icon-star"></i>										
+								<% end%><br>
+								<small class="muted">
+								  <%= Faker::Address.street_address%>
+								  <a>
+										<span>Show at map</span>
+										<i class="icon-map-marker"></i>										
+									</a>
+								</small>
+								
+							</h4>
+							<p> 																
+								<%= truncate(Faker::Lorem.sentence(word_count = 50), :length => 240) %>
+							</p>
+							<p><a href="#" class="btn btn-primary btn-medium">Book &raquo;</a>
+							
+							
+							<!--
+							<table cellspacing="0">
+								<thead>
+									<tr>
+										<th><span> Available room types </span></th>
+										<th><span>persons</span></th>
+										<th><span>Availability</span></th>
+										<th><span>Price for 5 nights</span></th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr class="roomrow entire_row_clickable">
+										<td class="roomName">
+											<div>
+												<a href="#"> Executive Double or Twin Room </a>
+													<span rel="200">Just booked!</span>
+												<div class="clear"></div>
+											</div>
+										</td>
+										<td >
+											<div >
+												<img width="43" height="10" alt="" src="">
+												<span >2</span>
+											</div>
+										</td>
+										<td  style="text-align: center;">
+											<div>
+												<a  href="#" rel="240">
+													<span class="only_x_left">Only 2 left</span>
+												</a>
+											</div>
+											<a class="room_link " href="" > </a>
+										</td>
+									<tr>	
+								</tbody>	
+							</table>	
+							-->
+							
+						</div>																																																																									
+					</li>
+					<p></p>
+				<% end%>					
+			</ul>	
+    </div><!--/span-->          
+  </div><!--/row-->
+</div><!--container-->
+
+
+
+
+
+
+
+
+
+
