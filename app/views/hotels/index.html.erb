@@ -322,9 +322,35 @@
 				<% 1.upto(10) do%>
 					<li class="row-fluid" itemscope itemtype="http://schema.org/Product">					 												
 						<% hotel_name = "Hotel #{Faker::Company.name}" %>							
-						<a class="thumbnail span3" title="hotel_name" href="#"> 													  
-							<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
-						</a>		
+						<div class="span3">
+							<a class="thumbnail" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+							</a>
+							<div>
+							   <a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								</a>
+								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								</a>
+								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								</a>								
+							</div>
+							<div>
+							   <a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								</a>
+								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								</a>
+								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								</a>								
+							</div>
+						</div>
+						
+								
 						<div class="span9">																					
 							<h4 itemprop="name" >
 								<%= hotel_name %> 
