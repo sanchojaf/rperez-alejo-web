@@ -344,11 +344,10 @@
 							<p> 																
 								<%= truncate(Faker::Lorem.sentence(word_count = 50), :length => 240) %>
 							</p>
-							<p><a href="#" class="btn btn-primary btn-medium">Book &raquo;</a>
 							
 							
-							<!--
-							<table cellspacing="0">
+							<small>
+							<table class="table">
 								<thead>
 									<tr>
 										<th><span> Available room types </span></th>
@@ -356,37 +355,64 @@
 										<th><span>Availability</span></th>
 										<th><span>Price for 5 nights</span></th>
 									</tr>
-								</thead>
-								
+								</thead>								
 								<tbody>
-									<tr class="roomrow entire_row_clickable">
-										<td class="roomName">
-											<div>
-												<a href="#"> Executive Double or Twin Room </a>
-													<span rel="200">Just booked!</span>
-												<div class="clear"></div>
-											</div>
+								<% colum = 2 + rand(2)%>
+								<% 1.upto(colum) do%> 									    
+									<tr >
+									    
+										<td>											
+											<% rooms = ["Standard Studio", "Superior Room", "Executive Room", "Deluxe Studio", "One-Bedroom Apartment", "Two-Bedroom Apartment", "Suite", "Junior Suite"] %>
+											<% room = rooms[rand(7)] %>
+											<a href="#"> <%= room %> </a>																					   
+											<% maybe = rand (10)%>
+											<% if maybe == 3 %>
+												<span href="#" class="btn btn-primary btn-mini btn-info">Save <%= 20 + rand(100)%>! &raquo;</span>													
+											 <%elsif maybe == 2%>   
+												<span href="#" class="btn btn-primary btn-mini btn-info">Last one! &raquo;</span>
+											 <% end %>   
+											<div class="clear"></div>											
+										</td>											
+										<td >											
+											<img width="43" height="10" alt="" src="">
+											<span >
+											<% paxs = 1 + rand(3) %>								
+											<% 1.upto(paxs) do%> 	
+												<% if paxs == 2 and false %>																					 	
+												  <i class="icon-parents"></i>										
+												<% else %>  
+												 <i class="icon-user"></i>
+												<% end %>  
+											<% end %><br>
+																						
+											</span>											
 										</td>
-										<td >
-											<div >
-												<img width="43" height="10" alt="" src="">
-												<span >2</span>
-											</div>
+										<td >											
+											<a  href="#" rel="240">
+												<span class="only_x_left">Only 2 left</span>
+											</a>											
+											<a class="room_link " href="" > </a>
 										</td>
-										<td  style="text-align: center;">
-											<div>
-												<a  href="#" rel="240">
-													<span class="only_x_left">Only 2 left</span>
-												</a>
-											</div>
+										<td >																						
+											<p  href="#" class="text-rigth text-info">												    
+												<%=price = 100 + rand(200)%>
+												<span href="#" class="btn btn-primary btn-mini"> Info & Book &raquo;</span>
+											</p>										
+											
+										</td>
 											<a class="room_link " href="" > </a>
 										</td>
 									<tr>	
+									
+									
+								<% end %>
+									
+									
 								</tbody>	
-							</table>	
-							-->
+							</table>
+							</small>	
 							
-						</div>																																																																									
+						</div>																																																		
 					</li>
 					<p></p>
 				<% end%>					
