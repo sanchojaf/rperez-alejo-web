@@ -4,10 +4,11 @@
 			<!--Sidebar content-->
 			<h3>Search Hotel</h3>  
 			<div>
-				<h4> Destination/hotel name: </h4>				
+				<h4> Destination/hotel name: <br>				
 				<input type="search" value="Madrid">
+				</h4>
 				<h4>
-					Distance:
+					Distance<br>
 					<select name="radius">
 						<option value="">select...</option>
 						<option value="2"> 2 km </option>
@@ -21,11 +22,63 @@
 						<option value="50"> 50 km </option>
 						<option value="100"> 100 km </option>
 				  </select>				
-				</h4>
-				
-				<h4> Check-in date  </h4>
-				
+				</h4>				
+
+							
 				<div >				  
+				  <h4>Check-in date<br>
+					<select class="span4" >			
+						<option value="1">Thu 1</option>
+						<option value="2">Fri 2</option>
+						<option value="3">Sat 3</option>
+						<option value="4">Sun 4</option>
+						<option value="5">Mon 5</option>
+						<option value="6">Tue 6</option>
+						<option value="7">Wed 7</option>
+						<option value="8">Thu 8</option>
+						<option value="9">Fri 9</option>
+						<option value="10">Sat 10</option>
+						<option value="11">Sun 11</option>
+						<option value="12">Mon 12</option>
+						<option value="13">Tue 13</option>
+						<option value="14">Wed 14</option>
+						<option value="15">Thu 15</option>
+						<option value="16">Fri 16</option>
+						<option value="17">Sat 17</option>
+						<option value="18">Sun 18</option>
+						<option value="19">Mon 19</option>
+						<option value="20">Tue 20</option>
+						<option value="21">Wed 21</option>
+						<option value="22">Thu 22</option>
+						<option value="23">Fri 23</option>
+						<option value="24">Sat 24</option>
+						<option value="25">Sun 25</option>
+						<option value="26">Mon 26</option>
+						<option value="27">Tue 27</option>
+						<option value="28">Wed 28</option>
+						<option selected="selected" value="29">Thu 29</option>
+						<option value="30">Fri 30</option>
+						<option value="31">Sat 31</option>
+			    </select>					
+					<select class="span8" name="checkin_year_month">
+						<option selected="selected" value="2013-8"> August 2013 </option>
+						<option value="2013-9"> September 2013 </option>
+						<option value="2013-10"> October 2013 </option>
+						<option value="2013-11"> November 2013 </option>
+						<option value="2013-12"> December 2013 </option>
+						<option value="2014-1"> January 2014 </option>
+						<option value="2014-2"> February 2014 </option>
+						<option value="2014-3"> March 2014 </option>
+						<option value="2014-4"> April 2014 </option>
+						<option value="2014-5"> May 2014 </option>
+						<option value="2014-6"> June 2014 </option>
+						<option value="2014-7"> July 2014 </option>
+			   </select>
+			   </h4>
+				</div>
+				
+				<div>
+				  <h4>Check-out date<br>  
 					<select class="span4" name="checkin_monthday">			
 						<option value="1">Thu 1</option>
 						<option value="2">Fri 2</option>
@@ -74,71 +127,13 @@
 						<option value="2014-6"> June 2014 </option>
 						<option value="2014-7"> July 2014 </option>
 			   </select>
+			   </h4>
 				</div>
-				
-				<div>
-				  <h4> Check-out date  </h4>
-					<select class="span4" name="checkin_monthday">			
-						<option value="1">Thu 1</option>
-						<option value="2">Fri 2</option>
-						<option value="3">Sat 3</option>
-						<option value="4">Sun 4</option>
-						<option value="5">Mon 5</option>
-						<option value="6">Tue 6</option>
-						<option value="7">Wed 7</option>
-						<option value="8">Thu 8</option>
-						<option value="9">Fri 9</option>
-						<option value="10">Sat 10</option>
-						<option value="11">Sun 11</option>
-						<option value="12">Mon 12</option>
-						<option value="13">Tue 13</option>
-						<option value="14">Wed 14</option>
-						<option value="15">Thu 15</option>
-						<option value="16">Fri 16</option>
-						<option value="17">Sat 17</option>
-						<option value="18">Sun 18</option>
-						<option value="19">Mon 19</option>
-						<option value="20">Tue 20</option>
-						<option value="21">Wed 21</option>
-						<option value="22">Thu 22</option>
-						<option value="23">Fri 23</option>
-						<option value="24">Sat 24</option>
-						<option value="25">Sun 25</option>
-						<option value="26">Mon 26</option>
-						<option value="27">Tue 27</option>
-						<option value="28">Wed 28</option>
-						<option selected="selected" value="29">Thu 29</option>
-						<option value="30">Fri 30</option>
-						<option value="31">Sat 31</option>
-			    </select>
-					
-					<select class="span8" name="checkin_year_month">
-						<option selected="selected" value="2013-8"> August 2013 </option>
-						<option value="2013-9"> September 2013 </option>
-						<option value="2013-10"> October 2013 </option>
-						<option value="2013-11"> November 2013 </option>
-						<option value="2013-12"> December 2013 </option>
-						<option value="2014-1"> January 2014 </option>
-						<option value="2014-2"> February 2014 </option>
-						<option value="2014-3"> March 2014 </option>
-						<option value="2014-4"> April 2014 </option>
-						<option value="2014-5"> May 2014 </option>
-						<option value="2014-6"> June 2014 </option>
-						<option value="2014-7"> July 2014 </option>
-			   </select>
-				</div>
-				
-				
-				<div>
-					<h4 class="span4">Adults</h4>
-					<h4 class="span4">Children</h4>
-					<h4 class="span4">Infant</h4>
-				</div>	
-				
-				
-				<div>																
-				
-				<select class="span4" id="adults" >
+								
+				<div class="row-fluid">
+          <div class="span4">
+             <h4>Adults<br>
+             <select class="span11" >
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -150,10 +145,12 @@
 							<option value="9">9</option>
 							<option value="10">10</option>
 						</select>
-						<input id="org_nr_adults" type="hidden" value="2" name="org_nr_adults">
-				
-						
-						<select class="span4">
+						<input id="org_nr_adults" type="hidden" value="2" name="org_nr_adults">    						
+						</h4>
+          </div>
+          <div class="span4">
+            <h4>Children<br>
+            <select class="span11">
 							<option selected="selected" value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -167,9 +164,11 @@
 							<option value="10">10</option>
 						</select>
 						<input id="org_nr_children" type="hidden" value="0" name="org_nr_children">
-				
-						
-						<select class="span4" id="infant" >
+						</h4>
+          </div>
+          <div class="span4">
+            <h4>Infant<br>
+            <select class="span11">
 						  <option selected="selected" value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -183,10 +182,10 @@
 							<option value="10">10</option>
 						</select>
 						<input id="org_nr_adults" type="hidden" value="0" name="infant">
+						</h4>
+          </div>          
+        </div>
 				
-						
-			  </div>
-														
 				<div>									
 				    <h4 class="span4"> Rooms<h4>							
 						<select  class="span4" id="nr_rooms">
@@ -224,7 +223,7 @@
 						<input id="org_nr_rooms" type="hidden" value="1" name="org_nr_rooms">
 				</div>
 				
-			  <button type="submit" class="btn">Search Hotels</button>
+			  <button type="submit" class="btn btn-primary">Search Hotels</button>
 				
 			</div>
     </div><!--/span-->
@@ -314,133 +313,158 @@
 				</ul>
 				<div>&nbsp;</div>
 			</div>    
-    
-    
       -->
       
 			<ul class="unstyled">
 				<% 1.upto(10) do%>
 					<li class="row-fluid" itemscope itemtype="http://schema.org/Product">					 												
 						<% hotel_name = "Hotel #{Faker::Company.name}" %>							
-						<div class="span3">
+						<div class="span3">																				 
 							<a class="thumbnail" title="hotel_name" href="#"> 													  
 								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
-							</a>
-							<div>
-							   <a class="thumbnail span4" title="hotel_name" href="#"> 													  
-								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+							</a> 						
+							<div class="row-fluid">
+							  <a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								  <%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
 								</a>
 								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
-								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								  <%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
 								</a>
 								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
-								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								  <%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
 								</a>								
 							</div>
 							<div>
-							   <a class="thumbnail span4" title="hotel_name" href="#"> 													  
-								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+							  <a class="thumbnail span4" title="hotel_name" href="#"> 													  
+								  <%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
 								</a>
 								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
-								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								  <%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
 								</a>
 								<a class="thumbnail span4" title="hotel_name" href="#"> 													  
-								<%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
+								  <%= image_tag "hotel/melia-cayo-guillermo/#{rand(15) + 1}.jpg" %>																										
 								</a>								
-							</div><br>
-														   							   
-							<p href="#" class="span8 offset2 btn btn-primary ">Info & Book &raquo;</p>
-							
+							</div>							
 						</div>
 						
+						<div class="span9">																  
+              <div class="row-fluid">
+						    <div class="span9">
+							    <h4 itemprop="name" >
+								    <%= hotel_name %> 
+								    <% star = 2 + rand(3) %>								
+								    <% 1.upto(star) do%> 																						 	
+								     <i	class="icon-star"></i>										
+								    <% end%><br>
+																																
+								    <small class="muted">
+								      <%= Faker::Address.street_address%>
+								      <a>
+										    <span>Show at map</span>
+										    <i class="icon-map-marker"></i>
+																				
+										    <!--i class="icon-pin-classic"></i-->
+																				
+									    </a>
+								    </small>
 								
-						<div class="span9">																					
-							<h4 itemprop="name" >
-								<%= hotel_name %> 
-								<% star = 2 + rand(3) %>								
-								<% 1.upto(star) do%> 																						 	
-								 <i	class="icon-star"></i>										
-								<% end%><br>
-								<small class="muted">
-								  <%= Faker::Address.street_address%>
-								  <a>
-										<span>Show at map</span>
-										<i class="icon-map-marker"></i>										
-									</a>
-								</small>
-								
-							</h4>
-							<p> 																
-								<%= truncate(Faker::Lorem.sentence(word_count = 50), :length => 240) %>
-							</p>
+							    </h4>
+							    <p> 																
+								    <%= truncate(Faker::Lorem.sentence(word_count = 50), :length => 240) %>
+							    </p>
+                
+                </div>
+                
+                <div class="span3">
+                  <% rating = 1 + rand(4) %>								
+							    <% 1.upto(rating) do%> 																						 	
+							     <i	class="icon-certificate"></i>										
+							    <% end%>
+							    <% 5.downto(rating +1) do%> 																						 	
+							     <i	class="icon-certificate icon-white"></i>										
+							    <% end%>
+							    <br>              
+                  <div>
+                    <a class="text-info">                    
+                      Very good, <%= 6 + rand(4)%>.<%= rand(10)%>/10 
+                      <span class="tile_fix">&nbsp;</span>
+                    </a>
+                      <p>
+                      Score from
+                      <strong class="count"><%= 100 + rand(1000)%></strong>
+                    reviews
+                    </p>
+                  </div>
+                	<br>
+							     <p href="#" class="offset3 btn btn-info btn-small ">Info & Book &raquo;</p>							   
+							    
+                </div>
+              </div>
+
 							
-							
-							<small>
-							<table class="table">
-								<thead>
-									<tr>
-										<th><span> Available room types </span></th>
-										<th><span>persons</span></th>
-										<th><span>Availability</span></th>
-										<th><span>Price for 5 nights</span></th>
-									</tr>
-								</thead>								
-								<tbody>
-								<% colum = 2 + rand(2)%>
-								<% 1.upto(colum) do%> 									    
-									<tr >
-									    
-										<td>											
-											<% rooms = ["Standard Studio", "Superior Room", "Executive Room", "Deluxe Studio", "One-Bedroom Apartment", "Two-Bedroom Apartment", "Suite", "Junior Suite"] %>
-											<% room = rooms[rand(7)] %>
-											<a href="#"> <%= room %> </a>																					   
-											<% maybe = rand (10)%>
-											<% if maybe == 3 %>
-												<span href="#" class="btn btn-primary btn-mini btn-info">Save <%= 20 + rand(100)%>! &raquo;</span>													
-											 <%elsif maybe == 2%>   
-												<span href="#" class="btn btn-primary btn-mini btn-info">Last one! &raquo;</span>
-											 <% end %>   
-											<div class="clear"></div>											
-										</td>											
-										<td >											
-											<img width="43" height="10" alt="" src="">
-											<span >
-											<% paxs = 1 + rand(3) %>								
-											<% 1.upto(paxs) do%> 	
-												<% if paxs == 2 and false %>																					 	
-												  <i class="icon-parents"></i>										
-												<% else %>  
-												 <i class="icon-user"></i>
-												<% end %>  
-											<% end %><br>
-																						
-											</span>											
-										</td>
-										<td >											
-											<a  href="#" rel="240">
-												<span class="only_x_left">Only 2 left</span>
-											</a>											
-											<a class="room_link " href="" > </a>
-										</td>
-										<td >																						
-											<p  href="#" class="text-rigth text-info">												    
-												<%=price = 100 + rand(200)%>
-												<span href="#" class="btn btn-primary btn-mini"> Info & Book &raquo;</span>
-											</p>										
-											
-										</td>
-											<a class="room_link " href="" > </a>
-										</td>
-									<tr>	
+							<div>
+							  <small>
+							  <table class="table table-hover table-condensed">
+								  <thead>
+									  <tr>
+										  <th>Available room types </th>
+										  <th>Persons</th>
+										  <th>Availability</th>
+										  <th>Price for 5 nights</th>
+									  </tr>
+								  </thead>								
+								  <tbody>
+								  <% colum = 2 + rand(2)%>
+								  <% 1.upto(colum) do%> 									    
+									  <tr >									    
+										  <td>											
+											  <% rooms = ["Standard Studio", "Superior Room", "Executive Room", "Deluxe Studio", "One-Bedroom Apartment", 
+											              "Two-Bedroom Apartment", "Suite", "Junior Suite"] %>
+											  <% room = rooms[rand(7)] %>
+											  <a href="#"> <%= room %> </a>																					   
+											  <% maybe = rand(8)%>
+											  <% if maybe == 3 %>
+											    <small><span class="label label-success">Save <%= 20 + rand(50)%>! &raquo;</span></small>
+											   <%elsif maybe == 2%>  
+											    <small><span class="label label-warning">Last one! &raquo;</span></small> 
+											   <% end %>   
+										  </td>											
+										  <td >																					
+											  <% paxs = 1 + rand(3) %>								
+											  <% 1.upto(paxs) do%> 	
+												  <% if paxs == 2 and false %>																					 	
+												    <i class="icon-parents"></i>										
+												  <% else %>  
+                            <i class="icon-user icon-large"></i>  												 
+												  <% end %>  												
+											  <% end %> 											
+											  <% childs = rand(2) %>								
+											  <% if childs > 0%>
+											    +
+											    <% 1.upto(childs) do%> 												       
+												     <i class="icon-user"></i>
+											    <% end %><br>
+											  <% end %>  																																																						
+										  </td>
+										  <td class="text-warning">											
+												  Only <%= 1 +rand(5)%> left
+										  </td>
+										  <td class="text-info">																						
+												  $ <%=price = 100 + rand(200)%> USD												
+										  </td>
+										  <td>
+											  <small><span class="label label-info">Info & Book &raquo;</span></small> 
+										  </td>
+									  <tr>	
 									
 									
-								<% end %>
+								  <% end %>
 									
 									
-								</tbody>	
-							</table>
-							</small>	
-							
+								  </tbody>	
+							  </table>
+							  </small>	
+						  </div>	
 						</div>																																																		
 					</li>
 					<p></p>
