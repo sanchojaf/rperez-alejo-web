@@ -1,6 +1,43 @@
-h1. Travel Demo
+h1. Travel Demo Prototype
 
-visit http://traveldemo.openjaf.com
+"Visit":http://traveldemo.openjaf.com.
+
+This prototype allow display some of the features that we want with Spree Travel.
+
+It's not a real application, and is independent of the gems.
+
+This prototype can display some of the features that you want with Spree Travel
+
+Later in the overall project will be used for the design of Spree Travel Demo. 
+
+
+h1. Spree Travel Project Summary
+
+We invite you to work with us in an open source project in which we are taking the first steps, but about which we feel very excited that we walk and where we would like you if any collaboration motivates the idea. Collaborate with ideas, code, clients, forms of funding, new partners, giving visibility to the project.
+
+To the point, the project name is Spree Travel and aims to provide the community with a framework verticalizing Spree e-Commerce for the travel industry, 100% free and open source, BSD licensed. The intention is to have a framework ready out of the box, which giving can be installed click the website of a travel agency ready to use.
+
+The E-Commerce framework not implement concepts applied directly to the travel industry. One difference is that the products offered are services rather than tangible products.
+
+We intend to cover the subdomains: Accommodation, Tours, Car Rentals, Airline Tickets (expandable to train and bus), Cruises, Transfers, Events, Packages, Attractions, Tours and Destinations.
+
+We hope that the proposal complies with the Open Travel Alliance standards ensuring interoperability with existing commercial solutions and third party applications.
+
+We also propose to create a set of modules for the internal management of a company in the sector, these will be developed as OpenERP addons and shared with the community. We will provide a connector system with the e-commerce platform Spree.
+
+They can work with the proposal of one of the following ways:
+
+* Contributing to the repositories, https://github.com/openjaf
+  - Integration with OTA, is the elements that need help;
+  - If they like Rails can develop together some of the gems;
+  - If you feel comfortable in contributing OpenERP addons;
+  - Raising issues as requirements.
+  - Identifying a potential customer, as we develop customized solutions, we can feed back in the projects we can work together, or advise on the development of a solution.
+  - Find others who may be interested in this open source project.
+  - Making us a donation or helping us find ways of financing.
+  - Giving Chase (Follow) on Linked-in OpenJAF, www.linkedin.com/company/openjaf
+
+
 
 h1. Rails3 Bootstrap Haml
 
