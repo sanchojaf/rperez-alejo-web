@@ -3,170 +3,18 @@
   <div class="row-fluid ">
   
     <div class="span2">
-		<!--Sidebar content-->
 		
-			<h4>Search Hotel</h4>  
-			<div>
-			
-				<h5> 
-					 Destination/hotel name: <br>									
-					 <input class="span12" type="text" placeholder="Madrid">
-				</h5>
-				
-				<h5 >
-					Distance
-					<select class="span7" placeholder="10 km">											  
-					  <% for i in 1..10 do%>
-							<option><%= i*10 %> km</option>
-						<% end %>						
-					</select>
-				</h5>											
-
-							
-				<h5>
-					Check-in date<br>
-					<select class="span4">			
-					  <option >1</option>
-					  <% for i in 2..31 do%>
-							<option><%= i %></option>
-						<% end %>						
-					</select>
-					<select class="span8">
-						<option> Aug, 2013 </option>
-						<option> Sep, 2013 </option>
-						<option> Oct, 2013 </option>
-						<option> Nov, 2013 </option>
-						<option> Dec, 2013 </option>
-						<option> Jan, 2014 </option>
-						<option> Feb, 2014 </option>
-						<option> Mar, 2014 </option>
-						<option> Apr, 2014 </option>
-						<option> May, 2014 </option>
-						<option> Jun, 2014 </option>
-						<option> Jul, 2014 </option>
-					 </select>
-				</h5>						
-				
-				<h5>
-					Check-out date<br>  
-					<select class="span4">			
-					  <option>1</option>
-					  <% for i in 2..31 do%>
-							<option><%= i %></option>
-						<% end %>						
-					</select>										
-					<select class="span8">
-						<option> Aug, 2013 </option>
-						<option> Sep, 2013 </option>
-						<option> Oct, 2013 </option>
-						<option> Nov, 2013 </option>
-						<option> Dec, 2013 </option>
-						<option> Jan, 2014 </option>
-						<option> Feb, 2014 </option>
-						<option> Mar, 2014 </option>
-						<option> Apr, 2014 </option>
-						<option> May, 2014 </option>
-						<option> Jun, 2014 </option>
-						<option> Jul, 2014 </option>
-					 </select>				
-				</h5>				
-				
-				<div class="row-fluid">									
-				
-					<h6 class="span4">
-						Adults<br>
-						<select class="span11" placeholder="0">
-							<% for i in 1..10 do %>
-								<option><%= i %></option>
-							<% end %>													
-						</select>						
-					</h6> <!--/span4-->				
-					
-					<h6 class="span4" placeholder="0">
-						Children<br>
-						<select class="span11" >							
-							<% for i in 0..10 do %>							  
-								<option><%= i %></option>								
-							<% end %>													
-						</select>						
-					</h6> <!--/span4-->				
-					
-					<h6 class="span4">
-						Infants<br>
-						<select class="span11" placeholder="0">						
-							<% for i in 0..10 do %>							  
-								<option> <%= i %> </option>								
-							<% end %>													
-						</select>						
-					</h6> <!--/span4-->				
-																																					
-				</div> <!--/row-fluid-->				
-
-       	<h5> 
-					Rooms							
-					<select class="span4" placeholder="1">
-						<% for i in 1..10 do %>							  
-							<option value="<%= i %>"> <%= i %> </option>								
-						<% end %>													
-					</select>						
-				</h5> 
-				
-				<button type="submit" class="btn btn-primary">Search Hotels</button>								
-			</div>
-    </div> <!--/span3-->
+		  <%= render 'search_box'%>					
+    </div>
     
     <div class="span10 ">                    
     
       <!--TODO: Order by-->    
-      
-     
+           
       
 			<div class="btn-toolbar span5 offset3 ">								
-				<div class="btn-group" >		    
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
-						Recommended
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-					<!-- dropdown menu links -->
-						<li>A</li>
-						<li>B</li>
-					</ul>
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
-						Stars
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">					
-						<li>A</li>
-						<li>B</li>
-					</ul>
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
-						Location
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">					
-						<li>A</li>
-						<li>B</li>
-					</ul>
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
-						Price
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">					
-						<li>A</li>
-						<li>B</li>
-					</ul>
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
-						Review score
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">					
-						<li>A</li>
-						<li>B</li>
-					</ul>
-					
-				</div>
-			</div>
+			  <%= render "order_by"%>  
+			</div>	
 			
 			<div class="btn-toolbar span2 offset2">
 				<div class="btn-group" >
