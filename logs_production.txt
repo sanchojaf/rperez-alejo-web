@@ -1,0 +1,52 @@
+2013-08-25T02:29:20+00:00 heroku[slug-compiler]: Slug compilation started
+2013-08-25T02:30:57.819893+00:00 heroku[api]: Scale to web=1 by sanchocuba@gmail.com
+2013-08-25T02:30:58.345138+00:00 heroku[api]: Attach HEROKU_POSTGRESQL_WHITE resource by sanchocuba@gmail.com
+2013-08-25T02:30:58.366865+00:00 heroku[api]: Release v3 created by sanchocuba@gmail.com
+2013-08-25T02:30:58.421050+00:00 heroku[api]: Add DATABASE_URL config by sanchocuba@gmail.com
+2013-08-25T02:30:58.441316+00:00 heroku[api]: Release v4 created by sanchocuba@gmail.com
+2013-08-25T02:30:58.488682+00:00 heroku[api]: Deploy 2ef2554 by sanchocuba@gmail.com
+2013-08-25T02:30:58.519264+00:00 heroku[api]: Release v5 created by sanchocuba@gmail.com
+2013-08-25T02:30:59+00:00 heroku[slug-compiler]: Slug compilation finished
+2013-08-25T02:31:03.729350+00:00 heroku[web.1]: Starting process with command `bundle exec thin start -R config.ru -e $RAILS_ENV -p 56435`
+2013-08-25T02:31:07.409383+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-08-25T02:31:07.409383+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-08-25T02:31:09.422131+00:00 app[web.1]: >> Thin web server (v1.2.11 codename Bat-Shit Crazy)
+2013-08-25T02:31:09.422131+00:00 app[web.1]: >> Maximum connections set to 1024
+2013-08-25T02:31:09.422131+00:00 app[web.1]: >> Listening on 0.0.0.0:56435, CTRL+C to stop
+2013-08-25T02:31:09.714725+00:00 heroku[web.1]: State changed from starting to up
+2013-08-25T02:33:52.306667+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by sanchocuba@gmail.com
+2013-08-25T02:33:59.259138+00:00 heroku[run.4057]: Awaiting client
+2013-08-25T02:33:59.285718+00:00 heroku[run.4057]: Starting process with command `bundle exec rake db:migrate`
+2013-08-25T02:34:00.568274+00:00 heroku[run.4057]: State changed from starting to up
+2013-08-25T02:34:06.708701+00:00 heroku[run.4057]: Process exited with status 0
+2013-08-25T02:34:11.557795+00:00 heroku[api]: Starting process with command `bundle exec rake db:seed` by sanchocuba@gmail.com
+2013-08-25T02:34:18.237139+00:00 heroku[run.2771]: Awaiting client
+2013-08-25T02:34:18.333501+00:00 heroku[run.2771]: Starting process with command `bundle exec rake db:seed`
+2013-08-25T02:34:19.626098+00:00 herok
+u[run.2771]: State changed from starting to up
+2013-08-25T02:34:35.018620+00:00 heroku[run.2771]: Process exited with status 0
+2013-08-25T02:34:35.030482+00:00 heroku[run.2771]: State changed from up to complete
+2013-08-25T02:34:56.365142+00:00 app[web.1]: Started GET "/" for 189.149.216.30 at 2013-08-25 02:34:56 +0000
+2013-08-25T02:34:56.752684+00:00 heroku[router]: at=info method=GET path=/ host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=2ms service=592ms status=200 bytes=1538
+2013-08-25T02:34:56.958953+00:00 heroku[router]: at=info method=GET path=/assets/application-a14f28ca1cdb37a05b4c1a32bc739632.css host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=2ms service=26ms status=200 bytes=228050
+2013-08-25T02:34:57.124792+00:00 heroku[router]: at=info method=GET path=/assets/application-c2bb74270a522380560264e670597e0d.js host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=5ms service=46ms status=200 bytes=140447
+2013-08-25T02:34:58.155587+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=3ms service=5ms status=200 bytes=0
+2013-08-25T02:36:05.155768+00:00 app[web.1]: Started GET "/" for 189.149.216.30 at 2013-08-25 02:36:05 +0000
+2013-08-25T02:36:05.173825+00:00 heroku[router]: at=info method=GET path=/ host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=2ms service=20ms status=304 bytes=0
+2013-08-25T02:36:05.382315+00:00 heroku[router]: at=info method=GET path=/assets/application-a14f28ca1cdb37a05b4c1a32bc739632.css host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=2ms service=20ms status=200 bytes=228050
+2013-08-25T02:36:22.271284+00:00 app[web.1]: Started GET "/hotels/index" for 189.149.216.30 at 2013-08-25 02:36:22 +0000
+2013-08-25T02:36:22.290101+00:00 app[web.1]: ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Faker):
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     133: 			<ul class="unstyled">
+2013-08-25T02:36:22.290101+00:00 app[web.1]: 
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     136: 						<% hotel_name = "Hotel #{Faker::Company.name}" %>													
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     135: 					<li class="row-fluid" itemscope itemtype="http://schema.org/Product">					 												
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     134: 				<% 1.upto(10) do%>
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     137: 						
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     139: 							<a class="thumbnail" title="hotel_name" href="#"> 													  
+2013-08-25T02:36:22.290101+00:00 app[web.1]:   app/views/hotels/index.html.erb:136:in `block in _app_views_hotels_index_html_erb___714187634729627761_28196600'
+2013-08-25T02:36:22.290372+00:00 app[web.1]:   app/views/hotels/index.html.erb:134:in `upto'
+2013-08-25T02:36:22.290372+00:00 app[web.1]:   app/views/hotels/index.html.erb:134:in `_app_views_hotels_index_html_erb___714187634729627761_28196600'
+2013-08-25T02:36:22.290372+00:00 app[web.1]: 
+2013-08-25T02:36:22.290101+00:00 app[web.1]:     138: 						<div class="span3">																				 
+2013-08-25T02:36:22.290372+00:00 app[web.1]: 
+2013-08-25T02:36:22.294281+00:00 heroku[router]: at=info method=GET path=/hotels/index host=mighty-peak-8999.herokuapp.com fwd="189.149.216.30" dyno=web.1 connect=2ms service=24ms status=500 bytes=643
