@@ -1,10 +1,10 @@
 h1. Travel Demo Prototype
 
-"Visit":http://traveldemo.openjaf.com
+Visit, http://traveldemo.openjaf.com
 
 For now only designed the view that corresponds to the list of hotels.
 
-"Visit":http://traveldemo.openjaf.com/hotels/index
+Visit, :http://traveldemo.openjaf.com/hotels/index
 
 This prototype allow display some of the features that we want with Spree Travel.
 
