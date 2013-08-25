@@ -1,12 +1,6 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.14'
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -17,6 +11,7 @@ gem 'bootstrap-sass'
 gem 'cancan'
 gem 'devise'
 gem 'figaro'
+gem 'haml-rails'
 gem 'rolify'
 gem 'simple_form'
 group :assets do
@@ -25,6 +20,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'html2haml'
   gem 'quiet_assets'
 end
 group :development, :test do
