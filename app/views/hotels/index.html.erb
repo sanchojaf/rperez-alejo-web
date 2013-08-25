@@ -14,13 +14,14 @@
 				</h5>
 				
 				<h5 >
-					Distance<br>
-					<select class="span12" placeholder="10 km">											  
+					Distance
+					<select class="span7" placeholder="10 km">											  
 					  <% for i in 1..10 do%>
 							<option><%= i*10 %> km</option>
 						<% end %>						
 					</select>
 				</h5>											
+
 							
 				<h5>
 					Check-in date<br>
@@ -31,18 +32,18 @@
 						<% end %>						
 					</select>
 					<select class="span8">
-						<option> August 2013 </option>
-						<option> September 2013 </option>
-						<option> October 2013 </option>
-						<option> November 2013 </option>
-						<option> December 2013 </option>
-						<option> January 2014 </option>
-						<option> February 2014 </option>
-						<option> March 2014 </option>
-						<option> April 2014 </option>
-						<option> May 2014 </option>
-						<option> June 2014 </option>
-						<option> July 2014 </option>
+						<option> Aug, 2013 </option>
+						<option> Sep, 2013 </option>
+						<option> Oct, 2013 </option>
+						<option> Nov, 2013 </option>
+						<option> Dec, 2013 </option>
+						<option> Jan, 2014 </option>
+						<option> Feb, 2014 </option>
+						<option> Mar, 2014 </option>
+						<option> Apr, 2014 </option>
+						<option> May, 2014 </option>
+						<option> Jun, 2014 </option>
+						<option> Jul, 2014 </option>
 					 </select>
 				</h5>						
 				
@@ -55,18 +56,18 @@
 						<% end %>						
 					</select>										
 					<select class="span8">
-						<option> August 2013 </option>
-						<option> September 2013 </option>
-						<option> October 2013 </option>
-						<option> November 2013 </option>
-						<option> December 2013 </option>
-						<option> January 2014 </option>
-						<option> February 2014 </option>
-						<option> March 2014 </option>
-						<option> April 2014 </option>
-						<option> May 2014 </option>
-						<option> June 2014 </option>
-						<option> July 2014 </option>
+						<option> Aug, 2013 </option>
+						<option> Sep, 2013 </option>
+						<option> Oct, 2013 </option>
+						<option> Nov, 2013 </option>
+						<option> Dec, 2013 </option>
+						<option> Jan, 2014 </option>
+						<option> Feb, 2014 </option>
+						<option> Mar, 2014 </option>
+						<option> Apr, 2014 </option>
+						<option> May, 2014 </option>
+						<option> Jun, 2014 </option>
+						<option> Jul, 2014 </option>
 					 </select>				
 				</h5>				
 				
@@ -101,7 +102,6 @@
 																																					
 				</div> <!--/row-fluid-->				
 
-
        	<h5> 
 					Rooms							
 					<select class="span4" placeholder="1">
@@ -109,7 +109,7 @@
 							<option value="<%= i %>"> <%= i %> </option>								
 						<% end %>													
 					</select>						
-				</h5> <!--/span4-->				
+				</h5> 
 				
 				<button type="submit" class="btn btn-primary">Search Hotels</button>								
 			</div>
@@ -118,16 +118,64 @@
     <div class="span10 ">                    
     
       <!--TODO: Order by-->    
-      <!--
-			<div class="btn-toolbar">
-				<div class="btn-group" >
-					<a class="btn" href="#"><i class="icon-align-left"></i></a>
-					<a class="btn" href="#"><i class="icon-align-center"></i></a>
-					<a class="btn" href="#"><i class="icon-align-right"></i></a>
-					<a class="btn" href="#"><i class="icon-align-justify"></i></a>
+      
+     
+      
+			<div class="btn-toolbar span5 offset3 ">								
+				<div class="btn-group" >		    
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
+						Recommended
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+					<!-- dropdown menu links -->
+						<li>A</li>
+						<li>B</li>
+					</ul>
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
+						Stars
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">					
+						<li>A</li>
+						<li>B</li>
+					</ul>
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
+						Location
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">					
+						<li>A</li>
+						<li>B</li>
+					</ul>
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
+						Price
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">					
+						<li>A</li>
+						<li>B</li>
+					</ul>
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">												
+						Review score
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">					
+						<li>A</li>
+						<li>B</li>
+					</ul>
+					
 				</div>
 			</div>
-			-->
+			
+			<div class="btn-toolbar span2 offset2">
+				<div class="btn-group" >
+					<a class="btn" href="#"><i class="icon-th-large"></i></a>
+					<a class="btn" href="#"><i class="icon-th"></i></a>					
+					<a class="btn" href="#"><i class="icon-th-list"></i></a>
+				</div>
+			</div>
+			
     
 			<ul class="unstyled">
 				<% 1.upto(10) do%>
@@ -221,8 +269,7 @@
 										<% colum = 2 + rand(3)%>
 										<% 1.upto(colum) do%> 		
 																	    
-											<tr >									    
-											
+											<tr >									    											
 												<td>											
 													<% rooms = ["Standard Studio", "Superior Room", "Executive Room", "Deluxe Studio", "One-Bedroom Apartment", 
 																			"Two-Bedroom Apartment", "Suite", "Junior Suite"] %>
