@@ -1,0 +1,14 @@
+%li.row-fluid{:itemscope => "", :itemtype => "http://schema.org/Product"}
+  .span3
+    = render  'thumbnails'
+  / /span3
+  .span9
+    .row-fluid
+      .span9
+        = render 'item_info'
+      .span3
+        = render 'rating'
+        %br/
+        = render 'base_price'
+    %small
+      = render  'rooms'

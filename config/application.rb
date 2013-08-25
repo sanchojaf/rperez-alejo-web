@@ -15,7 +15,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Rails3BootstrapHaml
+module TravelDemo
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
@@ -78,5 +78,9 @@ module Rails3BootstrapHaml
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Heroku requires this to be false
+    config.assets.initialize_on_precompile=false
+
   end
 end

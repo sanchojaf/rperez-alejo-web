@@ -1,4 +1,10 @@
-Rails3BootstrapHaml::Application.routes.draw do
+TravelDemo::Application.routes.draw do
+  get "cars/index"
+
+  get "flights/index"
+
+  get "hotels/index"
+
   authenticated :user do
     root :to => 'home#index'
   end

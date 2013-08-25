@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Rails3BootstrapHaml::Application.load_tasks
+TravelDemo::Application.load_tasks
