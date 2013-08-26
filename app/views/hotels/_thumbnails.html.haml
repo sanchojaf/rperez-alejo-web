@@ -1,6 +1,6 @@
-%a.thumbnail{:href => "#"}
+%a.thumbnail.hidden-phone{:href => "#"}
   = image_tag "hotels/#{1 + rand(9)}.jpg"
-.row-fluid
+.row-fluid.visible-desktop
   - 1.upto 2 do
     %div
       - 1.upto 3 do
