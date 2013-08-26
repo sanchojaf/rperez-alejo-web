@@ -1,0 +1,25 @@
+%table.table.table-hover.table-condensed
+  %tr
+    %th Leave
+    %th Arrive
+    %th Duration
+    %th Stops
+    %th Airline                  
+  %tbody
+    - colum = 2 + rand(3)
+    - 1.upto(colum) do
+      %tr.text-info
+        %td 
+          %input{:type => "checkbox"}
+          = (Time.now + 3600*rand(10)).strftime("at %I:%M%p")  
+        %td 
+          = (Time.now + 3600*rand(10)).strftime("at %I:%M%p")  
+        %td 
+          = "#{2 + rand(16)} hours"          
+        %td 
+          = rand(5)  
+        %td 
+          Cubana de aviación                          
+        %td
+          %small
+            %span.label.label-info Book »

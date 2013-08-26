@@ -1,0 +1,14 @@
+%li.row-fluid{:itemscope => "", :itemtype => "http://schema.org/Product"}
+  .row-fluid
+    .span9
+      %strong Departure
+      = render 'item_info'
+      %small
+        = render  'depth_level_info'
+      %strong Return  
+      = render 'item_info'
+      %small
+        = render  'depth_level_info'  
+    .span3
+      = render 'base_price'  
+%br/      

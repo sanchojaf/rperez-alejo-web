@@ -1,18 +1,15 @@
-%h4 Search Hotels
+%h4 Search Flights
 %div
   %h5
-    Destination/hotel name:
+    From
     %br/
-    %input.span12{:placeholder => "Madrid", :type => "text"}/
+    %input.span12{:placeholder => "City name or airport", :type => "text"}/
   %h5
-    Distance
-    %select.span7{:placeholder => "10 km"}
-      - for i in 1..10 do
-        %option
-          = i*10
-          km
+    To:
+    %br/
+    %input.span12{:placeholder => "City name or airport", :type => "text"}/  
   %h5
-    Check-in date
+    Leave
     %br/
     %select.span4{:placeholder => "1"}
       - for i in 1..31 do
@@ -31,7 +28,7 @@
       %option Jun, 2014
       %option Jul, 2014
   %h5
-    Check-out date
+    Return
     %br/
     %select.span4{:placeholder => "1"}
       - for i in 1..31 do
@@ -57,11 +54,22 @@
         %br/
         %select.span11{:placeholder => text_type[key]}
           - for i in 1..10 do
-            %option= i
-  %h5
-    Rooms
-    %select.span4{:placeholder => "1"}
-      - for i in 1..10 do
-        %option{:value => i}
-          = i
+            %option= i  
+  .row-fluid
+    - text_type = {"Leave time" => "No preference", "Return time" => "No preference"}
+    - text_type.keys.each do |key|
+      %h6.span6      
+        = key
+        %br/
+        %select.span11{:placeholder => text_type[key]}
+          - for i in 1..2 do
+            - for j in 1..12 do
+              -if i == 1
+                %option= "#{j} AM" 
+              - else  
+                %option= "#{j} PM"                                    
+  %br/
+  %label.checkbox
+    %input{:type => "checkbox"}  One way
+
   %button.btn.btn-primary{:type => "submit"} Search
