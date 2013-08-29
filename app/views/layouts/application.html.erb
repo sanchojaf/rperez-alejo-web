@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="initial-scale=1.0" name="viewport">
+      <title> 
+        <%= content_for?(:title) ? yield(:title) : "Sancho page" %> 
+      </title>    
+      <meta content=<%= content_for?(:description) ? yield(:description) : "Sancho personal page" %> name="description" >     
+        <%= stylesheet_link_tag    "application", :media => "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+        <%= yield(:head) %>
+                
+      </meta>
+    </meta>
+  </head>
+<body calss=<%"#{controller_name} #{action_name}"%>
+  <div class="container">
+    <div class="navbar navbar-fixed-top">
+      <nav class="navbar-inner">
+        <div class="container"> 
+          <%= render 'layouts/navigation' %>
+        </div>    
+      </nav>
+    </div>
+  </div>      
+  <div id="main" role="main">  
+    <div class="container">          
+      <div class="content">
+        <div class="row ">
+          <div class="span12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>   
+              <footer>       
+              </footer>
+          </div>
+        </div>
+    </div>  
+  </div>
+</body>
+</html>
+
+
